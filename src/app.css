@@ -1,0 +1,12 @@
+.menu-flags-button {
+  border: none;
+  outline: none;
+}
+
+.menu-flags ul {
+  @apply bg-gray-500 text-white;
+}
+
+.menu-flags ul li:hover {
+  @apply bg-gray-700 text-white;
+}
