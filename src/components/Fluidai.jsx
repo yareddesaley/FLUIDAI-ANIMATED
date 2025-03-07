@@ -99,8 +99,44 @@ const Fluidai = () => {
               </div>
             </motion.div>
 
-            {/* Additional Cards and Elements */}
-            {/* ... (other motion.div elements remain the same) ... */}
+            {/* Next To-Do Card */}
+            <motion.div
+              initial={{ translateX: "100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="absolute text-white top-5 left-3/4 bg-black bg-opacity-35 py-1 px-3 rounded-2xl"
+            >
+              <p className="text-gray-400">Next To-Do</p>
+              <h1 className="font-semibold text-gray-100 text-lg">
+                Renew car insurance
+              </h1>
+            </motion.div>
+
+            {/* Upcoming Events Card */}
+            <motion.div
+              initial={{ translateX: "100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="absolute text-white top-28 right-0 bg-black bg-opacity-35 py-1 px-3 pt-2 rounded-2xl mr-3"
+            >
+              <div className="flex gap-0 pt-2 ml-28 w-10 h-5 rounded-full">
+                <img src={s1} alt="" className="rounded-full -mr-3" />
+                <img src={s2} alt="" className="rounded-full -mr-1" />
+                <img src={s3} alt="" className="rounded-full w-1/2" />
+              </div>
+              <div className="pt-3">
+                <p className="text-gray-400">Upcoming Events</p>
+                <h1 className="font-semibold text-lg">Kite Beach</h1>
+                <div className="flex gap-2">
+                  <img
+                    src={clock}
+                    alt="clock"
+                    className="font-semibold h-5 w-5 rounded-full"
+                  />
+                  <span>10:00-14:00</span>
+                </div>
+              </div>
+            </motion.div>
 
             {/* Center Content */}
             <div className="absolute left-0 md:left-1/4 md:mr-28 text-white flex flex-col items-center md:gap-8">
@@ -118,6 +154,79 @@ const Fluidai = () => {
                 Join Waitlist
               </button>
             </div>
+
+            {/* Additional Cards */}
+            <motion.div
+              initial={{ translateX: "-100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="absolute text-white top-80 mb-10 bg-gray-500 bg-opacity-20 py-1 px-3 rounded-2xl"
+            >
+              <div className="flex gap-0 pt-2 ml-28 w-10 h-5 rounded-full">
+                <img src={s1} alt="" className="rounded-full -mr-3" />
+                <img src={s2} alt="" className="rounded-full -mr-1" />
+                <img src={s3} alt="" className="rounded-full w-1/2" />
+              </div>
+              <div className="pt-3">
+                <p className="text-gray-400">Upcoming Events</p>
+                <h1 className="font-semibold text-lg">Kite Beach</h1>
+                <div className="flex gap-2">
+                  <img
+                    src={clock}
+                    alt="clock"
+                    className="font-bold h-5 w-5 rounded-full"
+                  />
+                  <span>10:00-14:00</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Flight Icon */}
+            <motion.div
+              initial={{ translateX: "-100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+            >
+              <img
+                src={flight}
+                alt="flight"
+                className="absolute top-96 left-32 mt-20"
+              />
+            </motion.div>
+
+            {/* Additional Cards */}
+            <motion.div
+              initial={{ translateX: "-100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="py-2 px-4 bg-gray-500 bg-opacity-20 text-white rounded-2xl w-32 absolute top-96 left-60"
+            >
+              Cafe nearby
+            </motion.div>
+            <motion.div
+              initial={{ translateX: "-100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="py-2 px-4 bg-gray-500 bg-opacity-20 text-white rounded-2xl w-32 absolute top-52 -left-16 pt-10"
+            >
+              Car insurance
+            </motion.div>
+            <motion.div
+              initial={{ translateX: "100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="py-2 px-4 bg-gray-500 bg-opacity-20 text-white rounded-2xl w-32 absolute top-60 right-0"
+            >
+              Book a flight
+            </motion.div>
+            <motion.div
+              initial={{ translateX: "100vw" }}
+              animate={isInView ? { translateX: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
+              className="py-1 px-1 bg-gray-500 bg-opacity-20 text-white rounded-2xl w-24 absolute top-72 right-10"
+            >
+              Trip ideas
+            </motion.div>
           </div>
         </div>
       </div>
